@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/all.min2.css" />
+    <link rel="stylesheet" href="css/framework2.css" />
+    <link rel="stylesheet" href="css/master2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="page d-flex">
+      <div class="sidebar bg-green p-20 p-relative"  style="background-color: #27ae60;">
+        <h3 class="p-relative txt-c mt-0">Profil</h3>
+        <ul>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="index2.html">
+              <i class="fa-regular fa-chart-bar fa-fw"></i>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a class="active d-flex align-center fs-14 c-black rad-6 p-10" href="profile.html">
+              <i class="fa-regular fa-user fa-fw"></i>
+              <span>Profile</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="settings.html">
+              <i class="fa-solid fa-gear fa-fw"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="files.html">
+              <i class="fa-regular fa-file fa-fw"></i>
+              <span>Files</span>
+            </a>
+          </li>
+          <li>
+            <a class="d-flex align-center fs-14 c-black rad-6 p-10" href="plans.html">
+              <i class="fa-regular fa-credit-card fa-fw"></i>
+              <span>Plans</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="content w-full">
+        <!-- Start Head -->
+        <div class="head bg-white p-15 between-flex">
+          <div class="search p-relative">
+            <input class="p-10" type="search" placeholder="Type A Keyword" />
+          </div>
+          <div class="icons d-flex align-center">
+            <span class="notification p-relative">
+              <i class="fa-regular fa-bell fa-lg"></i>
+            </span>
+            <img src="imgs/avatar.png" alt="" />
+          </div>
+        </div>
+        <!-- End Head -->
+        <h1 class="p-relative">Profile</h1>
+        <div class="wrapper d-grid gap-20">
+          <!-- Start Welcome Widget -->
+          <div class="welcome bg-white rad-10 txt-c-mobile block-mobile">
+            <div class="intro p-20 d-flex space-between bg-eee">
+              <div>
+                <h2 class="m-0">Welcome</h2>
+                <p class="c-grey mt-5" name="name">Nom de l'utilisateur</p>
+              </div>
+              <img class="hide-mobile" src="imgs/welcome.png" alt="" />
+            </div>
+            <img src="imgs/avatar.png" alt="" class="avatar" />
+            <div class="body txt-c d-flex p-20 mt-20 mb-20 block-mobile">
+              <div>Nom Complet <span class="d-block c-grey fs-14 mt-10">Ahmed Ahmed</span></div>
+              <div>Id<span class="d-block c-grey fs-14 mt-10">2336212254</span></div>
+            </div>
+          </div>
+          <!-- End Welcome Widget -->
+          <!-- Start Latest Uploads Widget -->
+          <div class="latest-uploads p-20 bg-white rad-10">
+            <h2 class="mt-0 mb-20">Latest Downloads</h2>
+            <ul class="m-0">
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img class="mr-10" src="imgs/pdf.svg" alt="" />
+                  <div>
+                    <span class="d-block">Book 1.pdf</span>
+                    <span class="fs-15 c-grey">Victor Hugo</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">2.9mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img class="mr-10" src="imgs/pdf.svg" alt="" />
+                  <div>
+                    <span class="d-block">Book 3.pdf</span>
+                    <span class="fs-15 c-grey">Agatha Christie</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">4.9mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img class="mr-10" src="imgs/pdf.svg" alt="" />
+                  <div>
+                    <span class="d-block">Book 4.pdf</span>
+                    <span class="fs-15 c-grey">Fyodor Dostoevsky</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">4.5mb</div>
+              </li>
+              <li class="between-flex pb-10 mb-10">
+                <div class="d-flex align-center">
+                  <img class="mr-10" src="imgs/pdf.svg" alt="" />
+                  <div>
+                    <span class="d-block">Book 5.pdf</span>
+                    <span class="fs-15 c-grey">William Faulkner</span>
+                  </div>
+                </div>
+                <div class="bg-eee btn-shape fs-13">8.9mb</div>
+              </li>
+            </ul>
+          </div>
+          <!-- End Latest Uploads Widget -->
+      </div>
+      <div class="profile-page m-20">
+        <!-- Start Overview -->
+        <div class="overview bg-white rad-10 d-flex align-center">
+          <div class="avatar-box txt-c p-20">
+            <img class="rad-half mb-10" src="imgs/avatar.png" alt="" />
+            <h3 class="m-0">Ahmed Ahmed</h3>
+          </div>
+          <div class="info-box w-full txt-c-mobile">
+            <!-- Start Information Row -->
+            <div class="box p-20 d-flex align-center">
+              <div class="fs-14">
+                <span class="c-grey">Full Name : </span>
+                <span> Ahmed Ahmed</span>
+              </div>
+            </div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box p-20 d-flex align-center">
+              <div class="fs-14">
+                <span class="c-grey">Email:</span>
+                <span>Ahmed@gmail.com</span>
+              </div>
+            </div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box p-20 d-flex align-center">
+              <div class="fs-14">
+                <span class="c-grey">Password : </span>
+                <span>123456</span>
+              </div>
+            </div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box p-20 d-flex align-center">
+              <div class="fs-14">
+                <span class="c-grey">Id : </span>
+                <span>2336212254</span>
+              </div>
+            </div>
+            <!-- End Information Row -->
+            <!-- Start Information Row -->
+            <div class="box p-20 d-flex align-center">
+              <a href="settings.html" class="visit d-block fs-14 bg-blue c-white w-fit btn-shape" style="background-color: #27ae60;">Modify</a>
+            </div>
+            <!-- End Information Row -->
+          </div>
+        </div>
+        <!-- End Overview -->
+    </div>
+    <!-- footer section starts  -->
+
+<section class="footer">
+
+<div class="box-container">
+
+<div class="box">
+    <h3>our locations</h3>
+    <a href="#"> <i class="fas fa-map-marker-alt"></i> Casablanca Sidi Othman </a>
+</div>
+
+<div class="box">
+    <h3>quick links</h3>
+    <a href="#"> <i class="fas fa-arrow-right"></i> home </a>
+    <a href="#"> <i class="fas fa-arrow-right"></i> books </a>
+    <a href="#"> <i class="fas fa-arrow-right"></i> client'reviews </a>
+    <a href="#"> <i class="fas fa-arrow-right"></i> information </a>
+</div>
+
+<div class="box">
+    <h3>contact info</h3>
+    <a href="#"> <i class="fas fa-phone"></i> 060000000 </a>
+    <a href="#"> <i class="fas fa-envelope"></i> EnsamCasa@gmail.com </a>
+</div>
+
+</div>
+
+<div class="share">
+<a href="#" class="fab fa-facebook-f"></a>
+<a href="#" class="fab fa-twitter"></a>
+<a href="#" class="fab fa-instagram"></a>
+<a href="#" class="fab fa-linkedin"></a>
+</div>
+
+<div class="credit"> Made with 💖 by <span>SAKINI Oussama | ANIBA Souhail | BELHIAK Salah-Eddine</span></div>
+
+</section>
+
+<!-- footer section ends -->
+    </div>
+  </body>
+</html>

@@ -1,5 +1,6 @@
+import {Footer} from "./Components/footer"
 import { Header } from "./Components/header"
-import "./index.css"
+import {Reviews} from "./Components/reviews"
 export const Salah = () => {
 
 
@@ -41,7 +42,7 @@ return (
 
 		{// <!-- icons section starts  -->
 		}
-<center><h1 className="heading" style={{paddingTop: 2+'%'}}> <span>Our Services</span></h1></center>
+<center><h1 className="heading" styles={{paddingTop: 2+'%'}}> <span>Our Services</span></h1></center>
 <section className="icons-container">
     <div className="icons">
         <img src="image/Discovery2.png" width="40%"/>
@@ -220,335 +221,230 @@ return (
     </div>
 
 </section>
+<section className="arrivals" id="arrivals">
+
+    <h1 className="heading"> <span>Information</span> </h1>
+
+    <div className="swiper arrivals-slider">
+
+        <div className="swiper-wrapper">
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-1.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 1</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-2.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 2</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-3.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 3</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-4.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 4</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-5.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 5</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="{{fontSize: medium;fontFamily:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);}}">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <div className="swiper arrivals-slider">
+
+        <div className="swiper-wrapper">
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-6.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 6</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-7.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 7</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-8.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 8</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-9.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 9</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div className="swiper-slide box">
+                <div className="image">
+                    <img src="image/book-10.png" alt=""/>
+                </div>
+                <div className="content">
+                    <h3>Book 10</h3>
+                    <div className="stars">
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star"></i>
+                        <i className="fas fa-star-half-alt"></i>
+                    </div>
+                    <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
+                        <a href="Login.html">Read More</a>
+                    </div>                
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<Reviews/>
+<Footer/>
 	{
-// <!-- featured section ends -->
-
-
-// <!-- arrivals section starts  -->
-	
-// <section className="arrivals" id="arrivals">
-
-//     <h1 className="heading"> <span>Information</span> </h1>
-
-//     <div className="swiper arrivals-slider">
-
-//         <div className="swiper-wrapper">
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-1.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 1</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-2.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 2</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-3.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 3</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-4.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 4</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-5.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 5</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//         </div>
-
-//     </div>
-
-//     <div className="swiper arrivals-slider">
-
-//         <div className="swiper-wrapper">
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-6.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 6</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-7.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 7</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-8.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 8</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-9.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 9</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <div className="image">
-//                     <img src="image/book-10.png" alt="">
-//                 </div>
-//                 <div className="content">
-//                     <h3>Book 10</h3>
-//                     <div className="stars">
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star"></i>
-//                         <i className="fas fa-star-half-alt"></i>
-//                     </div>
-//                     <div style="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-//                         <a href="Login.html">Read More</a>
-//                     </div>                
-//                 </div>
-//             </div>
-
-//         </div>
-
-//     </div>
-
-// </section>
-
-// <!-- arrivals section ends -->
-
-
-
-// <!-- reviews section starts  -->
-
-// <section className="reviews" id="reviews">
-
-//     <h1 className="heading"> <span>Client's reviews</span> </h1>
-
-//     <div className="swiper reviews-slider">
-
-//         <div className="swiper-wrapper">
-
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-1.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-2.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-3.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-4.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-5.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-
-//             <div className="swiper-slide box">
-//                 <img src="image/pic-6.png" alt="">
-//                 <h3>john deo</h3>
-//                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-//             </div>
-
-//         </div>
-
-//     </div>
-    
-// </section>
-
-// <!-- reviews section ends -->
-
-
-// <!-- footer section starts  -->
-
-// <section className="footer">
-
-//     <div className="box-container">
-
-//         <div className="box">
-//             <h3>our locations</h3>
-//             <a href="#"> <i className="fas fa-map-marker-alt"></i> Casablanca Sidi Othman </a>
-//         </div>
-
-//         <div className="box">
-//             <h3>quick links</h3>
-//             <a href="#"> <i className="fas fa-arrow-right"></i> home </a>
-//             <a href="#"> <i className="fas fa-arrow-right"></i> books </a>
-//             <a href="#"> <i className="fas fa-arrow-right"></i> client'reviews </a>
-//             <a href="#"> <i className="fas fa-arrow-right"></i> information </a>
-//         </div>
-
-//         <div className="box">
-//             <h3>contact info</h3>
-//             <a href="#"> <i className="fas fa-phone"></i> 060000000 </a>
-//             <a href="#"> <i className="fas fa-envelope"></i> EnsamCasa@gmail.com </a>
-//         </div>
-        
-//     </div>
-
-//     <div className="share">
-//         <a href="#" className="fab fa-facebook-f"></a>
-//         <a href="#" className="fab fa-twitter"></a>
-//         <a href="#" className="fab fa-instagram"></a>
-//         <a href="#" className="fab fa-linkedin"></a>
-//     </div>
-
-//     <div className="credit"> Made with 💖 by <span>SAKINI Oussama | ANIBA Souhail | BELHIAK Salah-Eddine</span></div>
-
-// </section>
-
-// <!-- footer section ends -->
-
-// <!-- loader  -->
-
 // <div className="loader-container">
-//     <img src="image/loader-img.gif" alt="">
+//     <img src="image/loader-img.gif" alt=""/>
 // </div>
-// <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
-
-// <!-- custom js file link  -->
-// <script src="js/script.js"></script>
-
-// </body>
+		
 	}
-	
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
 	</>
 
 		 );

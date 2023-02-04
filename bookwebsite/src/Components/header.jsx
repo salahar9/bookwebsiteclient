@@ -1,3 +1,5 @@
+import {Search} from "./form";
+
 export const Header = () => {
   return (
     <>
@@ -7,19 +9,12 @@ export const Header = () => {
             <i className="fas fa-book"></i> Bookly
           </a>
 
-          <form action="" className="search-form">
-            <input
-              type="search"
-              name=""
-              placeholder="Search here..."
-              id="search-box"
-            ></input>
-            <label htmlFor="search-box" className="fas fa-search"></label>
-          </form>
-
-          <div className="icons">
-            <div id="search-btn" className="fas fa-search"></div>
-            <a
+          <nav className="navbar">
+            <a href="#home">Home</a>
+            <a href="#featured">Books</a>
+            <a href="#arrivals">Information</a>
+            <a href="#reviews">Client's Reviews</a>
+           <a
               href="./Login.html"
 >
 	  {
@@ -33,16 +28,10 @@ export const Header = () => {
 	  }
               Sign Up
             </a>
-          </div>
+          </nav>
         </div>
 
         <div className="header-2">
-          <nav className="navbar">
-            <a href="#home">Home</a>
-            <a href="#featured">Books</a>
-            <a href="#arrivals">Information</a>
-            <a href="#reviews">Client's Reviews</a>
-          </nav>
         </div>
       </header>
       <nav className="bottom-navbar">

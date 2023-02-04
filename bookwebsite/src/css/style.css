@@ -48,7 +48,14 @@ html::-webkit-scrollbar-thumb {
 section {
   padding: 5rem 9%;
 }
-
+.header {
+  position: absolute;
+  width: 100%;
+  background-color: transparent !important;
+}
+.header-1 {
+  background-color: transparent !important;
+}
 .heading {
   text-align: center;
   margin-bottom: 2rem;
@@ -66,7 +73,10 @@ section {
   background: rgba(0, 0, 0, 0.1);
   z-index: -1;
 }
-
+#root {
+  text-align: left;
+  padding: 0;
+}
 .heading span {
   font-size: 3rem;
   padding: 0.5rem 2rem;
@@ -92,7 +102,7 @@ section {
 }
 
 .header .header-1 {
-  background: #fff;
+  background: transparent;
   padding: 1.5rem 9%;
   display: flex;
   align-items: center;
@@ -161,19 +171,24 @@ section {
   background: var(--green);
 }
 
-.header .header-2 .navbar {
+.header .navbar {
   text-align: center;
 }
 
-.header .header-2 .navbar a {
-  color: #fff;
+.header .navbar a {
+  color: var(--black);
   display: inline-block;
   padding: 1.2rem;
   font-size: 1.7rem;
 }
 
-.header .header-2 .navbar a:hover {
-  background: var(--dark-color);
+.header .navbar a:hover {
+  color: var(--dark-color);
+}
+.header .navbar a:last-child {
+  background-color: var(--dark-color);
+  border-radius: 15%;
+  color: white;
 }
 
 .header .header-2.active {
@@ -183,7 +198,9 @@ section {
   right: 0;
   z-index: 1000;
 }
-
+.services {
+  height: 100vh;
+}
 .bottom-navbar {
   text-align: center;
   background: var(--green);
@@ -296,14 +313,19 @@ section {
 }
 
 .home {
+  height: 100vh;
   background: url(../image/banner-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
 }
 
 .home .row {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
+
   flex-wrap: wrap;
   gap: 1.5rem;
 }
@@ -818,4 +840,3 @@ section {
     font-size: 50%;
   }
 }
-

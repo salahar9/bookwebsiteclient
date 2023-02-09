@@ -13,14 +13,18 @@ export const Books=(props)=>{
 	
 	const [books,setBooks]=useState([]);
 	useEffect(()=>{
-
+		const ids=[]
+		for (var key in props.genre) {
+ 			ids.push(props.genre[key].id)
+		}
+		console.log('genre',props.genre,ids);
 		const d = async ()=>{
 			const data= await axios.post(`${api}/api/user/samebooks`,{
-				genre:props.genre?props.genre:null
+				id:ids
 			});
 		if( data.data.status){
-			console.log(data);
-			setBooks(data.data);
+			console.log("data",data);
+			setBooks(data.data.books);
 		}			
 		}
 		d();
@@ -85,7 +89,7 @@ return (
                         <i className="fas fa-star-half-alt"></i>
                     </div>
                     <div styles="font-size: medium;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color: rgb(72, 72, 204);">
-                        <Link to={`/${book.id}`}>Read More</Link>
+                        <Link to={`/book/${book.id}`}>Read More</Link>
                     </div>                
                 </div>
             </div></SwiperSlide>

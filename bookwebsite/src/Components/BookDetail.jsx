@@ -3,10 +3,11 @@ import {api} from "../api/"
 import {useEffect,useState} from "react"
 import {useParams} from "react-router-dom";
 import {Books} from "./bestbooks";
+import {Reviews} from "./reviews";
 
 export const BookDetails =()=>{
-	const [book,setBook]=useState([]);
-	const [books,setBooks]=useState([]);
+	const [book,setBook]=useState({});
+	const [wishlisted,setWishlisted]=useState(false);
 	const id= useParams();
 	useEffect(()=>{
 		const d = async ()=>{
@@ -21,6 +22,29 @@ export const BookDetails =()=>{
 		d();
 
 	},[])
+	const addWishList= ()=>{
+
+		const d = async ()=>{
+			const data= await axios.post(`${api}/api/user/wishlist/add`,
+{
+
+
+"book": {
+            "id": id.id
+           
+        }
+}
+
+			);
+		if( data.data.status){
+			console.log(data);
+			setWishlisted(true);
+		}			
+
+		}
+		d();
+}
+
 	return (
 <>
 
@@ -37,14 +61,14 @@ export const BookDetails =()=>{
             <p><b styles="color: rgb(44, 133, 11);font-family: cursive;font-size: large;">Maison Edition : </b>{book.maisonEdition}</p>
 
             <p><b styles="color: rgb(44, 133, 11);font-family: cursive;font-size: large;">Description : </b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem consectetur adipisci necessitatibus amet doloribus facilis cupiditate laboriosam ducimus tempore similique. Dignissimos ullam dolorem deleniti voluptatem nesciunt officiis culpa dolore harum.</p>
-            <button type="submit" action=""><a href="#" className="btn" styles="font-size: small;">Add to wish list</a></button>
-            <button type="submit" action=""><a href="#" className="btn" styles="font-size: small;">Add to plan list</a></button>
-            <button type="submit" action=""><a href="#" className="btn" styles="font-size: small;">Click Here To Download</a></button>
+            <button onClick={addWishList}  type="submit" action=""><a  href="#" className={wishlisted ?"btn done":"btn"} style={{fontSize: "small"}}>{wishlisted ? "Added": "Add to wishlist"}</a></button>
+            <button type="submit" action=""><a href="#" className="btn" style={{fontSize:"small"}}>Add to plan list</a></button>
+            <button type="submit" action=""><a href="#" className="btn" style={{fontSize:"small"}}>Click Here To Download</a></button>
         </div>
 
         <div className="swiper books-slider">
             <div>
-                <a href="#" className="swiper-slide"><img src="image/book-1.png" alt=""/></a>
+                <a href="#" className="swiper-slide"><img src="/image/book-1.png" alt=""/></a>
                 <div className="stars">
                     <i className="fas fa-star"></i>
                     <i className="fas fa-star"></i>
@@ -61,59 +85,8 @@ export const BookDetails =()=>{
 
 
 
-<Books title="Similar Books" genre={book.genre} />
-<section className="reviews" id="reviews">
-
-    <h1 className="heading"> <span>Client's reviews</span> </h1>
-
-    <div className="swiper reviews-slider">
-
-        <div className="swiper-wrapper">
-
-            <div className="swiper-slide box">
-                <img src="image/pic-1.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-
-            <div className="swiper-slide box">
-                <img src="image/pic-2.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-
-            <div className="swiper-slide box">
-                <img src="image/pic-3.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-            <div className="swiper-slide box">
-                <img src="image/pic-4.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-
-            <div className="swiper-slide box">
-                <img src="image/pic-5.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-
-            <div className="swiper-slide box">
-                <img src="image/pic-6.png" alt=""/>
-                <h3>john deo</h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nihil ipsa placeat. Aperiam at sint, eos ex similique facere hic.</p>
-            </div>
-
-        </div>
-
-    </div>
-    
-</section>
-
-
-
-
+		{'genres' in book  &&  <Books title="Similar Books" genre={book.genres} />}
+		{'genres' in book  &&  <Reviews title="Similar Books" reviews={book.reviews} />}
 <section className="footer">
 
     <div className="box-container">
